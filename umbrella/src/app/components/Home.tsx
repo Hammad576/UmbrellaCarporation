@@ -38,23 +38,25 @@ export default function Home() {
         />
       </div>
 
-      {/* Hero Section */}
+      {/* Hero Section with Banner Image */}
       <section className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <Image
-            src="/image2.jpg"
-            alt="Umbrella Corporation"
-            width={200}
-            height={200}
-            className="mx-auto mb-8 rounded-full shadow-lg"
-            priority
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
-          />
+          {/* Banner Image */}
+          <div className="relative w-full h-96 mb-8 rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/image2.jpg" // Replace with your actual banner image path
+              alt="Umbrella Corporation"
+              fill
+              className="object-cover transition-transform duration-500 hover:scale-105"
+              priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+            />
+          </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="text-red-600">Umbrella</span> Corporation
           </h1>
