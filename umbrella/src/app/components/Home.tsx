@@ -201,7 +201,7 @@ export default function Home() {
           </h2>
           <div className="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-300 max-w-md mx-auto mb-8">
-            Partner with us to reshape the future of Pakistan and beyond.
+            Partner with us to become a part of the Umbreall's Great Family. We have strong system and we belive in healthy work culture.
           </p>
           <Link href="/contact" passHref legacyBehavior>
             <motion.button
