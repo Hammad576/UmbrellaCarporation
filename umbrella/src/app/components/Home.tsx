@@ -97,7 +97,8 @@ export default function Home() {
           </h2>
           <div className="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-            Founded in 1996 in Larkana, Karachi, under a different name, Umbrella Corporation has evolved into a leader in research, education, and investment. Our mission is to drive innovation and progress in Pakistan and beyond.
+            
+            Umbrella Caropration Pakistan was founded in Larkan Karachi in year 1996 under a different Name. The purpose of this company was to make it as a Mother company to all the projects held at that time CEO. Its main domain were investment in Pakistan Stock Exchange, Research in Social Scineces and Technology and making Education Free and acessible for everyone. Now the company is shifted its headquarter in Attock , Punjab. We are still working on our targets.
           </p>
           <Link href="/about" passHref legacyBehavior>
             <motion.button
@@ -122,20 +123,22 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             {/* Project 1 */}
             <Box
-              title="T-Virus Research"
-              description="Pioneering biotechnology research with applications in medicine and agriculture."
+              title="Technology Resarch"
+              description="Pioneering biotechnology research with applications in medicine and agriculture.
+              Resarch in evolving technology of AI and other tech related Innovations which are producing heavy impacts on our livs.
+              "
               className="bg-zinc-800 border-l-4 border-red-600 hover:bg-zinc-700"
             />
             {/* Project 2 */}
             <Box
-              title="Hive Facility"
-              description="State-of-the-art underground research complex with cutting-edge laboratories."
+              title="Providing Education"
+              description="We are working to provide the free education that should be acessible to everyone in there native language and in a simple manner"
               className="bg-zinc-800 border-l-4 border-red-600 hover:bg-zinc-700"
             />
             {/* Project 3 */}
             <Box
-              title="Global Operations"
-              description="Strategic investments and facilities across Pakistan and international markets."
+              title="Investments"
+              description="From Umbrellas formation , Our main task was investments . The investments mainly done in Pakistan Stock Exchange. There are other portions of investments  including venture capitalists funds and Money Market funds"
               className="bg-zinc-800 border-l-4 border-red-600 hover:bg-zinc-700"
             />
           </div>
@@ -153,13 +156,13 @@ export default function Home() {
             {/* Highlight 1 */}
             <Box
               title="Diversified Portfolio"
-              description="A balanced mix of healthcare, technology, and defense sector investments."
+              description="A balanced portfolio in Pakistan Stock Exchange in Fertilizer, Cement , Automobiles, Chemicals sectos."
               className="bg-zinc-800 border-l-4 border-red-600 hover:bg-zinc-700"
             />
             {/* Highlight 2 */}
             <Box
               title="Growth Strategy"
-              description="Focused on aggressive expansion and market domination in key sectors."
+              description="We are focused on steady growth , while also considering the certain amount of risk for New Startups for gaining speed in growth."
               className="bg-zinc-800 border-l-4 border-red-600 hover:bg-zinc-700"
             />
           </div>
