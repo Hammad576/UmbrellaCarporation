@@ -3,6 +3,17 @@ import { Project } from "../types/project";
 export const projectsData: Project[] = [
   {
     id: 1,
+    title: "Ali Zaman Mobile Communication and Repairing Center",
+    category: "Retail Shop",
+    image: "/mobileShopLogo.avif", 
+    description:
+      "Ali Zaman mobile Communication was founded in back 2001. After some years the Umbrella took the ownership of the Shop.The Retail Shop involve in Celling Mobile and Smartphones. Acessories and Cellular Companies Top UP.",
+    status: "Active",
+    year: 2023,
+    location: "village Waisa, Attock,Punjab, Pakistan",
+  },
+  {
+    id: 11,
     title: "Umbrella Investments Private Limited",
     category: "Finance",
     image: "/finance.jpg", 
