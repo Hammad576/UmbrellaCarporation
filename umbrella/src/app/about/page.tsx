@@ -16,7 +16,8 @@ export default function AboutPage() {
           </h1>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Founded in 1996 in Larkana, Karachi, under a different name, Umbrella Corporation has evolved into a leader in research, education, and investment. Our mission is to drive innovation and progress in Pakistan and beyond.
+            Founded in 1996 in Larkana, Karachi, under a different name,
+            Umbrella Corporation purpose was to create a parent company under which all the projects will be run. At that time the main domains were investment in Pakistan Stock Exchange and research on Technology. The company is now also taking intereset in other sectors as wll especially in Education. Our mission is to provide equal oppourtunities to everyone and to make this world a better place to live and thrive.
           </p>
         </div>
       </section>
@@ -41,7 +42,7 @@ export default function AboutPage() {
                 Our Journey
               </h2>
               <p className="text-gray-300 mb-6">
-                Umbrella Corporation started as a small research lab focused on biotechnology. Over the years, we have expanded our operations to include cutting-edge infrastructure, environmental sustainability projects, and educational initiatives. Today, we are a global leader in innovation and technology.
+                Umbrella Corporation started as a parent compnay focuses on investment in PSX and research. Providing an Umbrella for all the projects and the research of that time CEO. We in future want to expend our exposure in golobal stock markets. Also we have did a lot of research on the Technology, such as AI and Robotics.
               </p>
               <ul className="list-disc pl-6 text-gray-300 space-y-2">
                 <li>Founded in 1996 in Larkana, Karachi</li>
@@ -64,19 +65,19 @@ export default function AboutPage() {
             {/* Highlight 1 */}
             <Box
               title="Stock Exchange"
-              description="We invest in diverse portfolios across global stock markets."
+              description="We invest in diversified portfolio in Pakistan Stock Exchange."
               className="bg-zinc-800 border-l-4 border-blue-600 hover:bg-zinc-700"
             />
             {/* Highlight 2 */}
             <Box
               title="Technology Research"
-              description="Driving innovation through cutting-edge R&D projects."
+              description="We have did a lot of research in Technology sector specially AI and robotics. And in futre intended to expand our researah in automation and make it publically availible"
               className="bg-zinc-800 border-l-4 border-blue-600 hover:bg-zinc-700"
             />
             {/* Highlight 3 */}
             <Box
               title="Social Sciences"
-              description="Advancing societal progress through interdisciplinary research."
+              description="Social Sciences are the most important study area in today world where the society is going through great change."
               className="bg-zinc-800 border-l-4 border-blue-600 hover:bg-zinc-700"
             />
           </div>
@@ -94,7 +95,7 @@ export default function AboutPage() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-4">Mission</h3>
               <p className="text-gray-300">
-                To advance research, business, and investment in Pakistan with cutting-edge innovation and sustainable practices.
+                To advance research and awareness in Investment, business, technology  and  make them acessible for everyone. Our slogan is Free Education For Everyone.
               </p>
             </div>
 
@@ -102,7 +103,8 @@ export default function AboutPage() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-4">Vision</h3>
               <p className="text-gray-300">
-                To become a global leader in driving technological and societal progress through groundbreaking initiatives.
+                To become your trustworthy partner in research and awareness.
+                We want to educate everyone so that the people can understand the today modern world challenges and better cop with it. Creating this world a better place to live.
               </p>
             </div>
           </div>
@@ -131,7 +133,7 @@ export default function AboutPage() {
           <h3 className="text-2xl font-bold text-blue-500 mb-2">Hammad Nawaz</h3>
           <p className="text-lg text-gray-400 mb-4">Chief Executive Officer</p>
           <p className="text-gray-300 mb-6">
-            Hammad Nawaz leads Umbrella Corporation with a vision to transform industries through innovation and strategic investments. Under his leadership, the company has achieved significant milestones in technology, research, and social impact.
+            Hammad Nawaz took charge of the Umbrella Caropration at very young age. The company was in serious crisis at that time. Still we are facing a lot of Challanges due to certain conditions. But we still belive that at some point the company will be functional again and will start working to achieve the goals.
           </p>
 
           {/* Contact Cards */}

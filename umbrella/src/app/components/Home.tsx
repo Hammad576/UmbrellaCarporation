@@ -58,11 +58,11 @@ export default function Home() {
             />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="text-red-600">Umbrella</span> Corporation
+            <span className="text-red-600">Umbrella</span> Corporation Pakistan
           </h1>
           <p className="text-lg text-gray-300 max-w-md mx-auto mb-8">
             Our business is <span className="text-red-500 font-semibold">life</span> itself. 
-            Advancing research and innovation across Pakistan.
+            Advancing research and Investment and Technology all over Pakistan.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/projects" passHref legacyBehavior>
