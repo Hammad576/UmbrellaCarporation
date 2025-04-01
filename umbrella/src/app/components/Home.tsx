@@ -98,7 +98,7 @@ export default function Home() {
           <div className="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
             
-            Umbrella Caropration Pakistan was founded in Larkan Karachi in year 1996 under a different Name. The purpose of this company was to make it as a Mother company to all the projects held at that time CEO. Its main domain were investment in Pakistan Stock Exchange, Research in Social Scineces and Technology and making Education Free and acessible for everyone. Now the company is shifted its headquarter in Attock , Punjab. We are still working on our targets.
+            Umbrella Caropration Pakistan was founded in Larkan Karachi in year 1996 under a different Name. The purpose of this company was to make it as a Mother company to all the projects held at that time CEO. Its main domain of interest were investment in Pakistan Stock Exchange, Research in Social Scineces and Technology and making Education Free and acessible for everyone.After the passing of the founder, the company is shifted its headquarter in waisa Village Attock , Punjab. We are still working on our targets.
           </p>
           <Link href="/about" passHref legacyBehavior>
             <motion.button
@@ -113,7 +113,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Projects Section */}
+      {/* Umbrella Projects Section */}
       <section className="relative z-10 py-16 bg-zinc-900">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             {/* Highlight 1 */}
             <Box
-              title="Diversified Portfolio"
+              title="Diversified Portfolio in PSX"
               description="A balanced portfolio in Pakistan Stock Exchange in Fertilizer, Cement , Automobiles, Chemicals sectos."
               className="bg-zinc-800 border-l-4 border-red-600 hover:bg-zinc-700"
             />
@@ -201,7 +201,7 @@ export default function Home() {
           </h2>
           <div className="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-300 max-w-md mx-auto mb-8">
-            Partner with us to become a part of the Umbreall's Great Family. We have strong system and we belive in healthy work culture.
+            Partner with us to become a part of the Umbrealls Great Family. We have strong system and we belive in healthy work culture.
           </p>
           <Link href="/contact" passHref legacyBehavior>
             <motion.button

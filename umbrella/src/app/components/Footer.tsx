@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
@@ -38,7 +37,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-sm text-slate-400">
-            &copy; {new Date().getFullYear()} Umbrella Corporation. All rights reserved.
+            &copy; {new Date().getFullYear()} Umbrella Corporation Pakistan. All rights reserved.
           </p>
         </div>
       </div>

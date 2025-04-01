@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Project } from "../types/project";
+import Image from "next/image";
 
 // Project data with explicit typing
 const projects: Project[] = [
@@ -22,7 +23,7 @@ const projects: Project[] = [
     id: 2,
     title: "Umbrella Open Source",
     category: "Technology",
-    image: "opensource.jpg", // Replace with actual image URL
+    image: "/opensource.jpg", // Replace with actual image URL
     description:
       "Developing open-source coding tools and AI-driven solutions for developers worldwide.",
     status: "Active",
@@ -114,9 +115,11 @@ function ProjectCard({ project }: { project: Project }) {
     >
       {/* Project Image */}
       <div className="relative h-48 overflow-hidden">
-        <img
+        <Image
           src={project.image}
           alt={project.title}
+          width={500} // Set width as per your requirement
+          height={300} // Set height as per your requirement
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute top-0 right-0 bg-blue-500 text-white px-3 py-1 text-sm font-semibold">
