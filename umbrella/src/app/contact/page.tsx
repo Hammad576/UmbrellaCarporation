@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Box from "../components/Box"; // Import reusable Box component
-
+import Box from "../components/Box";  
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -15,7 +14,7 @@ export default function ContactPage() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: any) => {
+  const handleChange =  (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -23,7 +22,7 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>)  => {
     e.preventDefault();
     // Simulate form submission
     console.log("Form Data Submitted:", formData);

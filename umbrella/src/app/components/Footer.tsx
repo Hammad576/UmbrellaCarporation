@@ -26,7 +26,7 @@ export default function Footer() {
             </a>
             {/* GitHub Icon */}
             <a
-              href="https://github.com/HammadNawaz"
+              href="https://github.com/Hammad576"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-slate-800 hover:bg-blue-500 text-white p-2 rounded-full transition-all duration-200 flex items-center justify-center w-10 h-10 text-xl"

@@ -4,61 +4,14 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Project } from "../types/project";
+import { projectsData } from "../data/projectsData"; // Import project data
 import Image from "next/image";
-
-// Project data with explicit typing
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "Umbrella Investments Private Limited",
-    category: "Finance",
-    image: "/finance.jpg", // Replace with actual image URL
-    description:
-      "Driving strategic investments across global stock markets and industries.",
-    status: "Active",
-    year: 2023,
-    location: "Karachi, Pakistan",
-  },
-  {
-    id: 2,
-    title: "Umbrella Open Source",
-    category: "Technology",
-    image: "/opensource.jpg", // Replace with actual image URL
-    description:
-      "Developing open-source coding tools and AI-driven solutions for developers worldwide.",
-    status: "Active",
-    year: 2022,
-    location: "Global",
-  },
-  {
-    id: 3,
-    title: "Umbrella Tech Researcher",
-    category: "Research",
-    image: "/AI.jpg", // Replace with actual image URL
-    description:
-      "Pioneering cutting-edge research in biotechnology, AI, and sustainable technologies.",
-    status: "Active",
-    year: 2021,
-    location: "Larkana, Pakistan",
-  },
-  {
-    id: 4,
-    title: "Umbrella Social Sciences & Psychology Researchers",
-    category: "Social Sciences",
-    image: "/psycology.jpg", // Replace with actual image URL
-    description:
-      "Advancing interdisciplinary research in social sciences and psychology to address societal challenges.",
-    status: "Active",
-    year: 2020,
-    location: "Islamabad, Pakistan",
-  },
-];
 
 export default function ProjectsPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   // Filter projects based on search query
-  const filteredProjects = projects.filter((project) =>
+  const filteredProjects = projectsData.filter((project) =>
     project.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
