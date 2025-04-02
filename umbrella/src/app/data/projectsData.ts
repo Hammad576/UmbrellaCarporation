@@ -16,7 +16,7 @@ export const projectsData: Project[] = [
     id: 14,
     title: "My AI Subject (CUI Attock)",
     category: "A Web Page for my AI Subject (CSC 462)",
-    image: "/aiImage2.webp", 
+    image: "/aiImage3.jpg", 
     description:
       "This Web Page Contains the Material Related to My Course related to AI in Comsats University Islamabad (Attock Campus). Our Instructor is Doctor Zunaira Rauf. We have studied the basics of AI algorithims and until the last of our projects we will develop a Model",
     status: "Active",
