@@ -1,6 +1,17 @@
 import { Project } from "../types/project";
 
 export const projectsData: Project[] = [
+    {
+    id: 12,
+    title: "Umbrella AI",
+    category: "Artificial Intelligence Projects and Research Articles",
+    image: "/aiImage2.webp", 
+    description:
+      "This section is deals with Artificial Intelligence AI , ML models and Research Articles. AI is the most demanding and hot subject now a days and its adaptaion is necessary for survival in today modern world.",
+    status: "Active",
+    year: 2020,
+    location: "Village Waisa, Attock,Punjab, Pakistan",
+  },
   {
     id: 1,
     title: "Ali Zaman Mobile Communication and Repairing Center",
@@ -10,8 +21,9 @@ export const projectsData: Project[] = [
       "Ali Zaman mobile Communication was founded in back 2001. After some years the Umbrella took the ownership of the Shop.The Retail Shop involve in Celling Mobile and Smartphones. Acessories and Cellular Companies Top UP.",
     status: "Active",
     year: 2023,
-    location: "village Waisa, Attock,Punjab, Pakistan",
+    location: "Village Waisa, Attock,Punjab, Pakistan",
   },
+
   {
     id: 11,
     title: "Umbrella Investments Private Limited",
