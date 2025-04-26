@@ -1,6 +1,17 @@
 import { Project } from "../types/project";
 
 export const projectsData: Project[] = [
+  {
+    id: 123,
+    title: "My Deep Learning Practise",
+    category: "My Deep Learning practise projects and Models.",
+    image: "/deepLearningLogo2.avif", 
+    description:
+      "Deep learning projects and models under the supervision of Dr Zunaira Rauf Phd. We will implement the basic deep learning models then we will go advance step by step",
+    status: "Active",
+    year: 2020,
+    location: "Comsats University Islamabad, Attock Campus",
+  },
     {
     id: 12,
     title: "Umbrella AI",
