@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { Project } from "../../types/project";
 import { projectsData } from "../../data/projectsData";
 
 interface ProjectDetailsProps {
