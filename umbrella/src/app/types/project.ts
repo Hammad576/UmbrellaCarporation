@@ -8,4 +8,5 @@ export interface Project {
   status: string;
   year: number;
   location: string;
+  link:string;
 }

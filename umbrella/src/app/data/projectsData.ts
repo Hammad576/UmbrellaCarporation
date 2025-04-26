@@ -9,19 +9,21 @@ export const projectsData: Project[] = [
     description:
       "Deep learning projects and models under the supervision of Dr Zunaira Rauf Phd. We will implement the basic deep learning models then we will go advance step by step",
     status: "Active",
-    year: 2020,
+    year: 2025,
     location: "Comsats University Islamabad, Attock Campus",
+    link:"https://www.example.com"
   },
     {
     id: 12,
-    title: "Umbrella AI",
-    category: "Artificial Intelligence Projects and Research Articles",
-    image: "/aiImage2.webp", 
+    title: "Database Terminal Project",
+    category: "Our Database Terminal Project unser the supervision of Dr Shehzad Rizwan.",
+    image: "/dbLabProject.png", 
     description:
-      "This section is deals with Artificial Intelligence AI , ML models and Research Articles. AI is the most demanding and hot subject now a days and its adaptaion is necessary for survival in today modern world.",
+      "Our database Terminal Project contains the project of our database Lab in which we will implement the frontened and design the backend of the Education Prediction System . We will also build our own ML Model.",
     status: "Active",
     year: 2020,
-    location: "Village Waisa, Attock,Punjab, Pakistan",
+    location: "Comsats University Islamabad, Attock Campus",
+    link:"https://www.example.com"
   },
   {
     id: 14,
@@ -33,6 +35,7 @@ export const projectsData: Project[] = [
     status: "Active",
     year: 2025,
     location: "Village Waisa, Attock,Punjab, Pakistan",
+    link:"www.example.com"
   },
   {
     id: 1,
@@ -44,6 +47,7 @@ export const projectsData: Project[] = [
     status: "Active",
     year: 2023,
     location: "Village Waisa, Attock,Punjab, Pakistan",
+    link:"www.example.com"
   },
 
   {
@@ -56,6 +60,7 @@ export const projectsData: Project[] = [
     status: "Active",
     year: 2023,
     location: "Karachi, Pakistan",
+    link:"www.example.com"
   },
   {
     id: 2,
@@ -67,6 +72,7 @@ export const projectsData: Project[] = [
     status: "Active",
     year: 2022,
     location: "Global",
+    link:"www.example.com"
   },
   {
     id: 3,
@@ -78,6 +84,7 @@ export const projectsData: Project[] = [
     status: "Active",
     year: 2021,
     location: "Larkana, Pakistan",
+    link:"www.example.com"
   },
   {
     id: 4,
@@ -89,5 +96,6 @@ export const projectsData: Project[] = [
     status: "Active",
     year: 2020,
     location: "Islamabad, Pakistan",
+    link:"www.example.com"
   },
 ];

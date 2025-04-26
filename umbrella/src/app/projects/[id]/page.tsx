@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { projectsData } from "../../data/projectsData";
 import { use } from "react";
+import Link from "next/link";
 
 interface ProjectDetailsProps {
   params: Promise<{ id: string }>;
@@ -12,9 +13,7 @@ async function getParams(paramsPromise: Promise<{ id: string }>) {
 }
 
 export default function ProjectDetails({ params }: ProjectDetailsProps) {
-  // Properly unwrap the params promise
   const { id } = use(getParams(params));
-  
   const projectId = parseInt(id);
   const project = projectsData.find((p) => p.id === projectId);
 
@@ -24,48 +23,67 @@ export default function ProjectDetails({ params }: ProjectDetailsProps) {
 
   return (
     <main className="bg-zinc-900 text-white min-h-screen">
-      {/* Project Details Section */}
-      <section className="min-h-[calc(100vh-64px)] py-8">
-        <div className="h-full w-full px-4 sm:px-6 lg:px-8 mx-auto">
-          <div className="h-full max-w-6xl mx-auto bg-zinc-800 rounded-xl overflow-hidden border border-slate-700 flex flex-col">
-            {/* Project Image */}
-            <div className="relative w-full aspect-video overflow-hidden">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
+      {/* Project Content - Full screen layout */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Compact Image Section */}
+        <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden mb-8">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, 80vw"
+          />
+        </div>
 
-            {/* Project Content */}
-            <div className="flex-1 p-6 md:p-8 flex flex-col">
-              <div className="flex-1">
-                <h1 className="text-3xl md:text-4xl font-bold mb-4">{project.title}</h1>
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-                  <span className="text-sm md:text-base text-blue-400 font-medium">
-                    {project.category}
-                  </span>
-                  <span className="text-sm md:text-base text-gray-400">{project.year}</span>
-                </div>
-                <p className="text-gray-300 mb-8 text-base md:text-lg leading-relaxed">
-                  {project.description}
-                </p>
-              </div>
-
-              <div className="mt-auto pt-6 border-t border-slate-700">
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                  <span className="text-sm md:text-base text-gray-400">{project.location}</span>
-                  <span className="text-sm md:text-base text-blue-400 font-medium">
-                    Status: {project.status}
-                  </span>
-                </div>
-              </div>
+        {/* Project Details - Highlighted Content */}
+        <div className="space-y-6">
+          {/* Title Section */}
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+              {project.title}
+            </h1>
+            <div className="flex justify-center gap-4 text-lg text-gray-300">
+              <span className="text-blue-400">{project.category}</span>
+              <span>•</span>
+              <span>{project.year}</span>
             </div>
           </div>
+
+          {/* Description - Highlighted */}
+          <div className="bg-zinc-800/50 p-6 rounded-lg backdrop-blur-sm">
+            <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+              {project.description}
+            </p>
+          </div>
+
+          {/* Project Metadata - Single grid container */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-zinc-800/50 p-4 rounded-lg">
+              <h3 className="text-sm font-semibold text-gray-400 mb-1">Location</h3>
+              <p className="text-white">{project.location}</p>
+            </div>
+            <div className="bg-zinc-800/50 p-4 rounded-lg">
+              <h3 className="text-sm font-semibold text-gray-400 mb-1">Status</h3>
+              <p className="text-blue-400 font-medium">{project.status}</p>
+            </div>
+            {project.link && (
+              <div className="bg-zinc-800/50 p-4 rounded-lg">
+                <h3 className="text-sm font-semibold text-gray-400 mb-1">Project Link</h3>
+                <Link 
+                  href={project.link} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 font-medium hover:text-blue-300 transition-colors"
+                >
+                  Visit Project →
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
-      </section>
+      </div>
     </main>
   );
 }
