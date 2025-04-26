@@ -1,19 +1,25 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { projectsData } from "../../data/projectsData";
+import { use } from "react";
 
-// Updated interface to match Next.js 15 expectations
 interface ProjectDetailsProps {
-  params: { id: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  params: Promise<{ id: string }>;
 }
 
-export default async function ProjectDetails({ params }: ProjectDetailsProps) {
-  const projectId = parseInt(params.id);
+async function getParams(paramsPromise: Promise<{ id: string }>) {
+  return await paramsPromise;
+}
+
+export default function ProjectDetails({ params }: ProjectDetailsProps) {
+  // Properly unwrap the params promise
+  const { id } = use(getParams(params));
+  
+  const projectId = parseInt(id);
   const project = projectsData.find((p) => p.id === projectId);
 
   if (!project) {
-    notFound();
+    return notFound();
   }
 
   return (
